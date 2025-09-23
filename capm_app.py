@@ -88,6 +88,16 @@ ke = rf_dec + beta * erp_dec
 st.subheader("Resultado")
 st.write(f"**Ke = {ke*100:.2f}%**")
 
+# Grafico interactivo
+fig = px.line(
+    x=[0, 1],           # Valores en el eje X → aquí representas Beta de 0 a 1
+    y=[rf, ke],         # Valores en el eje Y → Ke correspondiente a esos Betas
+    labels={'x': 'Beta', 'y': 'Ke'},  # Etiquetas de los ejes
+    title="Relación entre Beta y Costo de Capital"  # Título del gráfico
+)
+st.plotly_chart(fig)     # Muestra el gráfico interactivo en Streamlit
+
+
 # Ejemplo con varios betas (opcional)
 st.subheader("Sensibilidad del Ke con distintos β")
 betas = [0.5, 1.0, 1.5, 2.0]
@@ -137,6 +147,7 @@ if descripcion_usuario:
         industria = industrias[idx]
         beta = df[df["Industry Name"] == industria]["Unlevered beta corrected for cash"].values[0]
         st.write(f"- **{industria}** → β = {float(beta):.4f}")
+
 
 
 
