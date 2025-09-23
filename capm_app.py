@@ -89,6 +89,8 @@ st.subheader("Resultado")
 st.write(f"**Ke = {ke*100:.2f}%**")
 
 # Grafico interactivo
+import plotly.express as px
+
 fig = px.line(
     x=[0, 1],           # Valores en el eje X → aquí representas Beta de 0 a 1
     y=[rf, ke],         # Valores en el eje Y → Ke correspondiente a esos Betas
@@ -147,6 +149,7 @@ if descripcion_usuario:
         industria = industrias[idx]
         beta = df[df["Industry Name"] == industria]["Unlevered beta corrected for cash"].values[0]
         st.write(f"- **{industria}** → β = {float(beta):.4f}")
+
 
 
 
