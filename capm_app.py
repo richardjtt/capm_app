@@ -154,10 +154,11 @@ if descripcion_usuario:
 st.markdown("---")
 st.markdown("**Fuentes de datos utilizadas para los cálculos:**")
 st.markdown("""
-- **Betas de la industria:** Damodaran Online – [https://www.stern.nyu.edu/~adamodar/](https://www.stern.nyu.edu/~adamodar/)
-- **Tasa libre de riesgo (10Y Treasury Rate):** FRED – [https://fred.stlouisfed.org/series/DGS10](https://fred.stlouisfed.org/series/DGS10)
-- **Riesgo país / ERP:** Damodaran Online – [https://www.stern.nyu.edu/~adamodar/pc/datasets/ctryprem.xlsx](https://www.stern.nyu.edu/~adamodar/pc/datasets/ctryprem.xlsx)
+- Betas de la industria: Damodaran Online
+- Tasa libre de riesgo (10Y Treasury Rate): FRED
+- Riesgo país / ERP: Damodaran Online
 """)
+
 
 
 
