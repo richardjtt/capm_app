@@ -1,7 +1,7 @@
 # Núcleo de análisis
 numpy==2.3.3
-pandas==2.2.4
-scipy==1.12.2
+pandas==2.3.2
+scipy==1.11.3
 
 # Fechas y timezone
 python-dateutil==2.9.0.post0
@@ -61,3 +61,4 @@ jsonschema-specifications==2025.9.1
 referencing==0.36.2
 rpds-py==0.27.1
 narwhals==2.5.0
+
