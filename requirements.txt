@@ -30,8 +30,8 @@ GitPython==3.1.45
 smmap==5.0.2
 
 # Data & computation
-pyarrow==21.0.0
-protobuf==6.32.1
+pyarrow==12.0.1
+protobuf==4.24.3
 cachetools==6.2.0
 attrs==25.3.0
 six==1.17.0
@@ -46,7 +46,7 @@ plotly==5.18.0
 fredapi==0.5.0
 
 # ML & NLP
-torch>=1.13.0,<3.0
+torch==2.2.0
 sentence-transformers==2.3.1
 huggingface_hub==0.26.0
 tenacity==9.1.2
