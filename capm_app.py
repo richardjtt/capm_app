@@ -128,4 +128,14 @@ if descripcion_usuario:
         st.write(f"- **{industria}** → β = {float(beta):.4f}")
 
 
+import streamlit as st
+from PIL import Image
+
+# Cargar la imagen desde la carpeta "imagen"
+img = Image.open("imagen/VPN.png")
+
+# Mostrar la imagen
+st.image(img, caption="VPN Logo", use_column_width=True)
+
+
 
