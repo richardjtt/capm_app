@@ -46,7 +46,7 @@ plotly==5.18.0
 fredapi==0.5.0
 
 # ML & NLP
-torch>=1.13.0,<3.0   # compatible con Python 3.13
+torch>=1.13.0,<3.0
 sentence-transformers==2.3.1
 huggingface_hub==0.26.0
 tenacity==9.1.2
