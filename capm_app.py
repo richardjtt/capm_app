@@ -66,7 +66,9 @@ beta_desapalancado = df[df["Industry Name"] == industria][col_beta].values[0]
 beta_desapalancado = float(beta_desapalancado)
 
 
-st.title("Modelo CAPM - Conservador")
+st.title("Modelo CAPM - Conservador | Desarrollado por Richard Jammer"")
+st.markdown("Herramienta de análisis de Beta y Costo de Capital para empresas. By **Richard Jammer**.")
+
 
 st.markdown("Este modelo calcula el **Costo de Capital (Ke)** sin deuda usando la fórmula del **CAPM**:")
 st.latex(r"Ke = R_f + \beta \times ERP")
@@ -137,6 +139,7 @@ if descripcion_usuario:
         industria = industrias[idx]
         beta = df[df["Industry Name"] == industria]["Unlevered beta corrected for cash"].values[0]
         st.write(f"- **{industria}** → β = {float(beta):.4f}")
+
 
 
 
