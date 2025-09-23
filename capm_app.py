@@ -151,6 +151,14 @@ if descripcion_usuario:
         beta = df[df["Industry Name"] == industria]["Unlevered beta corrected for cash"].values[0]
         st.write(f"- **{industria}** → β = {float(beta):.4f}")
 
+st.markdown("---")
+st.markdown("**Fuentes de datos utilizadas para los cálculos:**")
+st.markdown("""
+- **Betas de la industria:** Damodaran Online – [https://www.stern.nyu.edu/~adamodar/](https://www.stern.nyu.edu/~adamodar/)
+- **Tasa libre de riesgo (10Y Treasury Rate):** FRED – [https://fred.stlouisfed.org/series/DGS10](https://fred.stlouisfed.org/series/DGS10)
+- **Riesgo país / ERP:** Damodaran Online – [https://www.stern.nyu.edu/~adamodar/pc/datasets/ctryprem.xlsx](https://www.stern.nyu.edu/~adamodar/pc/datasets/ctryprem.xlsx)
+""")
+
 
 
 
