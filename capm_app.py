@@ -96,6 +96,16 @@ for b in betas:
     st.write(f"β = {b:.1f} → Ke = {ke_b*100:.2f}%")
     
 
+import streamlit as st
+from PIL import Image
+
+# Cargar la imagen desde la carpeta "imagen"
+img = Image.open("imagen/VPN.png")
+
+# Mostrar la imagen
+st.image(img, caption="VPN Logo", use_column_width=True)
+
+
 
 from sentence_transformers import SentenceTransformer, util
 
@@ -128,14 +138,8 @@ if descripcion_usuario:
         st.write(f"- **{industria}** → β = {float(beta):.4f}")
 
 
-import streamlit as st
-from PIL import Image
 
-# Cargar la imagen desde la carpeta "imagen"
-img = Image.open("imagen/VPN.png")
 
-# Mostrar la imagen
-st.image(img, caption="VPN Logo", use_column_width=True)
 
 
 
