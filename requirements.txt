@@ -1,60 +1,56 @@
-altair==5.5.0
-attrs==25.3.0
-blinker==1.9.0
-cachetools==6.2.0
-certifi==2025.8.3
-charset-normalizer==3.4.3
-click==8.3.0
-colorama==0.4.6
-gitdb==4.0.12
-GitPython==3.1.45
-idna==3.10
-Jinja2==3.1.6
-jsonschema==4.25.1
-jsonschema-specifications==2025.9.1
-MarkupSafe==3.0.2
-narwhals==2.5.0
+# Core libraries
 numpy==2.3.3
-packaging==25.0
 pandas==2.3.2
-pillow==11.3.0
-protobuf==6.32.1
-pyarrow==21.0.0
-pydeck==0.9.1
 python-dateutil==2.9.0.post0
 pytz==2025.2
-referencing==0.36.2
+tzdata==2025.2
+packaging==25.0
 requests==2.32.5
-rpds-py==0.27.1
-six==1.17.0
-smmap==5.0.2
+urllib3==2.5.0
+charset-normalizer==3.4.3
+idna==3.10
+certifi==2025.8.3
+
+# Streamlit & UI
 streamlit==1.49.1
-tenacity==9.1.2
+altair==5.5.0
+blinker==1.9.0
+click==8.3.0
+colorama==0.4.6
+Jinja2==3.1.6
+MarkupSafe==3.0.2
+pydeck==0.9.1
 toml==0.10.2
 tornado==6.5.2
-typing_extensions==4.15.0
-tzdata==2025.2
-urllib3==2.5.0
 watchdog==6.0.0
-xlrd==2.0.1
-openpyxl==3.1.2
-sentence-transformers==2.3.1
-torch>=1.13.0
-huggingface_hub==0.26.0
 
+# Git integration
+gitdb==4.0.12
+GitPython==3.1.45
+smmap==5.0.2
 
-pandas==2.1.0
-numpy==1.24.0
-torch>=1.13.0
-requests==2.31.0
+# Data & computation
+pyarrow==21.0.0
+protobuf==6.32.1
+cachetools==6.2.0
+attrs==25.3.0
+six==1.17.0
+jsonschema==4.25.1
+jsonschema-specifications==2025.9.1
+referencing==0.36.2
+rpds-py==0.27.1
+narwhals==2.5.0
+pillow==11.3.0
 matplotlib==3.8.0
 plotly==5.18.0
 fredapi==0.5.0
 
+# ML & NLP
+torch>=1.13.0,<3.0   # compatible con Python 3.13
+sentence-transformers==2.3.1
+huggingface_hub==0.26.0
+tenacity==9.1.2
 
-
-
-
-
-
-
+# Optional for Excel
+xlrd==2.0.1
+openpyxl==3.1.2
