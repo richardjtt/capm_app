@@ -100,10 +100,11 @@ import streamlit as st
 from PIL import Image
 
 # Cargar la imagen desde la carpeta "imagen"
-img = Image.open("imagen/VPN.png")
+img = Image.open("imagen/vpn.png")
 
 # Mostrar la imagen
-st.image(img, caption="VPN Logo", use_column_width=True)
+st.image(img, caption="VPN Logo", use_container_width=True)
+
 
 
 
@@ -136,6 +137,7 @@ if descripcion_usuario:
         industria = industrias[idx]
         beta = df[df["Industry Name"] == industria]["Unlevered beta corrected for cash"].values[0]
         st.write(f"- **{industria}** → β = {float(beta):.4f}")
+
 
 
 
