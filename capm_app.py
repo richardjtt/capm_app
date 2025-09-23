@@ -100,6 +100,16 @@ fig = px.line(
 st.plotly_chart(fig)     # Muestra el gráfico interactivo en Streamlit
 
 
+betas = [0.5, 1.0, 1.5, 2.0]  # o cualquier rango que quieras
+kes = [rf + b * erp for b in betas]
+
+fig = px.line(
+    x=betas,
+    y=kes,
+    labels={'x': 'Beta', 'y': 'Ke'},
+    title="Relación entre Beta y Costo de Capital"
+)
+
 # Ejemplo con varios betas (opcional)
 st.subheader("Sensibilidad del Ke con distintos β")
 betas = [0.5, 1.0, 1.5, 2.0]
@@ -149,6 +159,7 @@ if descripcion_usuario:
         industria = industrias[idx]
         beta = df[df["Industry Name"] == industria]["Unlevered beta corrected for cash"].values[0]
         st.write(f"- **{industria}** → β = {float(beta):.4f}")
+
 
 
 
