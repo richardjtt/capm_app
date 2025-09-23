@@ -110,7 +110,7 @@ st.image(img, caption="Tasa de descuento en proyectos", use_container_width=True
 
 from sentence_transformers import SentenceTransformer, util
 
-st.subheader("🧠 Sugerencia inteligente de industria Damodaran")
+st.subheader("🧠 Sugerencia inteligente del beta para tu industria - Damodaran")
 
 # Entrada libre del usuario
 descripcion_usuario = st.text_input("Detalla tu industria (se sugiere traducir a inglés, ej. 'company dedicated to the manufacture of toilet soaps')")
@@ -137,6 +137,7 @@ if descripcion_usuario:
         industria = industrias[idx]
         beta = df[df["Industry Name"] == industria]["Unlevered beta corrected for cash"].values[0]
         st.write(f"- **{industria}** → β = {float(beta):.4f}")
+
 
 
 
