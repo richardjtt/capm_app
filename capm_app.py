@@ -103,7 +103,7 @@ from PIL import Image
 img = Image.open("imagen/VPN.png")
 
 # Mostrar la imagen
-st.image(img, caption="VPN Logo", use_container_width=True)
+st.image(img, caption="Tasa de descuento en proyectos", use_container_width=True)
 
 
 
@@ -137,6 +137,7 @@ if descripcion_usuario:
         industria = industrias[idx]
         beta = df[df["Industry Name"] == industria]["Unlevered beta corrected for cash"].values[0]
         st.write(f"- **{industria}** → β = {float(beta):.4f}")
+
 
 
 
