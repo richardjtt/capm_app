@@ -44,3 +44,5 @@ transformers>=4.40.0
 huggingface-hub>=0.26.0
 xlrd>=2.0.1
 openpyxl==3.1.2
+plotly==5.18.0
+
