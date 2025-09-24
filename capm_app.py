@@ -73,35 +73,15 @@ st.latex(r"Ke = R_f + \beta \times ERP")
 
 
 # Inputs
-rf = st.number_input(
-    "Tasa libre de riesgo (Rf) - FRED 10Y",
-    value=rf,
-    step=0.0001,
-    format="%.4f",
-    disabled=True,
-    help="Valor obtenido de FRED 10Y",
-    key="rf_input"
-)
+st.markdown("### 📈 Tasa libre de riesgo (Rf) - FRED 10Y")
+rf = st.number_input("", value=rf, step=0.0001, format="%.4f", disabled=True)
 
-erp = st.number_input(
-    "Total Equity Risk Premium (ERP) - Perú",
-    value=erp_peru,
-    step=0.0001,
-    format="%.4f",
-    disabled=True,
-    help="Equity Risk Premium para Perú",
-    key="erp_input"
-)
+st.markdown("### 💹 Total Equity Risk Premium (ERP) - Perú")
+erp = st.number_input("", value=erp_peru, step=0.0001, format="%.4f", disabled=True)
 
-beta = st.number_input(
-    "Beta (β) de Metals & Mining (Damodaran)",
-    value=beta_desapalancado,
-    step=0.01,
-    format="%.2f",
-    disabled=True,
-    help="Beta desapalancado de la industria",
-    key="beta_input"
-)
+st.markdown("### ⚖️ Beta (β) de Metals & Mining (Damodaran)")
+beta = st.number_input("", value=beta_desapalancado, step=0.01, disabled=True)
+
 
 
 # Usar los valores directamente en el cálculo
@@ -189,6 +169,7 @@ st.markdown("""
 - Tasa libre de riesgo (10Y Treasury Rate): FRED
 - Riesgo país / ERP: Damodaran Online
 """)
+
 
 
 
